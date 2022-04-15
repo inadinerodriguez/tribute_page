@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selena Tribute Page</title> 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-    </script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
@@ -17,28 +12,25 @@
 
 <style>
 html {
-    font-size: 10px;
-    
+    font-size: 10px;    
 }
 
 body {
-   
+    font-family: 'Merriweather', serif;
 }
 
 
-
-.header {
-    text-align: center;
+.headline {
     font-family: 'Merriweather', serif;
+    margin: 50px 0;
+    text-align: center;
+    
 }
 
 a {
     color: #440187;
 }
 
-a:visited {
-    color: #e8da3f;
-}
 
 h1 {
     font-size: 4rem;
@@ -57,6 +49,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 3.25rem;
+    padding-top: 30px;
 }
 
 p {
@@ -72,13 +65,23 @@ img {
 }
 
 
-
 #img-div {
     background: white;
     text-align: center;
     font-size: 2rem;
-    
+}
 
+#img-caption {
+    align-items: center;
+    font-size: 2em;
+    margin: 50px 0 20px 0;
+    padding: 20px 0 20px 0;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
 }
 
 #main {
@@ -86,19 +89,23 @@ img {
     border-radius: 20px;
     margin-top: 30px 10px;
     padding: 30px;
-
 }
 
-caption {
-    align-items: center;
-    font-size: 2em;
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
 }
 
+ul {
+    max-width: 650px;
+    text-align: left;
+    line-height: 1.8;
+    margin: 0 auto 50px auto;
+}
 
 li {
-    text-align: left;
-    line-height: 1.3;
-    padding: 5px 30px 10px 30px;
+    margin: 15px 0;
 
 }
 
@@ -108,14 +115,18 @@ section {
     
 }
 
-.quotes {
+blockquote {
+    font-style: italic;
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
 }
+
 
 </style>
 <body>
 <main id="main">
-   <div class="header">  
+   <div class="headline">  
    <h1 id="title">Selena Quintanilla Perez</h1> 
    <p>The "Queen of Tejano Music"</p>
     </div>
@@ -163,9 +174,11 @@ section {
     <li>Selena's legacy lives on. She had movies and shows created about her. In March 2020, Selena became the first Latina artist to be inducted into the Star Trail of Fame.<strong>Her music lives on and she will never be forgotten</strong></li>
     </ul>
 
-    <quote class="quotes">
-       <em>"She was the reason I even dared to dream that a better life was possible"</em> - Eva Longoria
-    </quote>
+    <blockquote class="quotes">
+       <p><em>"She was the reason I even dared to dream that a better life was possible"</em></p> 
+       <cite>- Eva Longoria</cite>
+    </blockquote>
+    
 
     <h3>Keep reading about this amazing and incredible soul on her <a id="tribute-link" href="https://en.wikipedia.org/wiki/Selena" target="_blank">Wiki page.</a></h3>
 
